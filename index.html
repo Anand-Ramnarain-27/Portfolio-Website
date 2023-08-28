@@ -17,6 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -26,8 +28,7 @@
       <ul class="navlist">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#protfolio">Portfolio</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -37,7 +38,7 @@
     </header>
 
     <main class="hero" id="home">
-      <section class="main-content">
+      <section class="main-content" data-aos="fade-in">
         <h1>Hi, There!</h1>
         <h2>I'm <span>Anand Ramnarain</span></h2>
         <p>
@@ -59,17 +60,105 @@
     </main>
 
     <main class="about" id="about">
-      <section class="about-img">
+      <section class="about-img" data-aos="zoom-in-down">
         <img src="Images/v1013-p-0019d-01-ksi8b5jn.jpg" alt="" />
       </section>
 
-      <section class="about-text">
+      <section class="about-text" data-aos="zoom-in-up">
         <h2>I am a <span>Designer</span> & Web Developer</h2>
         <section class="exp-area">
-          <p class="exp">Experience <span>1 Year</span></p>
+          <p class="exp">Experience: <span>1 Year</span></p>
+          <p class="exp">Specialty: <span>1 Year</span></p>
+          <p class="exp">Phone: <span>1 Year</span></p>
+          <p class="exp">Email: <span>1 Year</span></p>
+        </section>
+        <a href="#" class="btn">View All Projects</a>
+      </section>
+    </main>
+
+    <main class="portfolio" id="portfolio">
+      <section class="center-text" data-aos="fade-up">
+        <h2>My <span>Portfolio</span></h2>
+      </section>
+
+      <section class="portfolio-content" data-aos="fade-down">
+        <section class="row">
+          <img src="Images/v1013-p-0019d-01-ksi8b5jn.jpg" alt="" />
+          <section class="main-row">
+            <section class="row-text">
+              <h3>Website Design</h3>
+            </section>
+            <section class="row-icon">
+              <i class="bx bxl-github"></i>
+            </section>
+          </section>
+          <h4>Website Development For Dark X</h4>
+        </section>
+
+        <section class="row">
+          <img src="Images/v1013-p-0019d-01-ksi8b5jn.jpg" alt="" />
+          <section class="main-row">
+            <section class="row-text">
+              <h3>Website Design</h3>
+            </section>
+            <section class="row-icon">
+              <i class="bx bxl-github"></i>
+            </section>
+          </section>
+          <h4>Website Development For Dark X</h4>
+        </section>
+
+        <section class="row">
+          <img src="Images/v1013-p-0019d-01-ksi8b5jn.jpg" alt="" />
+          <section class="main-row">
+            <section class="row-text">
+              <h3>Website Design</h3>
+            </section>
+            <section class="row-icon">
+              <i class="bx bxl-github"></i>
+            </section>
+          </section>
+          <h4>Website Development For Dark X</h4>
         </section>
       </section>
     </main>
+
+    <main class="contact" id="contact">
+      <section class="center-text" data-aos="zoom-out">
+        <h2>Contact <span>Me</span></h2>
+      </section>
+
+      <section class="contact-form" data-aos="zoom-in">
+        <form action="">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Email Address..." required />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Write Message Here..."
+            required
+          ></textarea>
+          <input type="submit" name="" value="Send Message" class="send-btn" />
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="copyright">
+        <p>2023 Anand Ramnarain, All Rights Reserved.</p>
+      </section>
+
+      <a href="#home" class="scroll-top"><i class="bx bx-arrow-to-top"></i></a>
+    </footer>
   </body>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1400,
+    });
+  </script>
 </html>
